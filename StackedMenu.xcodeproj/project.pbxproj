@@ -54,14 +54,46 @@
 		1F56737C1E6FA2BF0070B718 /* StackedMenu */ = {
 			isa = PBXGroup;
 			children = (
+				1F5673921E6FA7D80070B718 /* Models */,
+				1F5673911E6FA7D20070B718 /* Views */,
+				1F5673901E6FA7CB0070B718 /* Controllers */,
+				1F56738F1E6FA7C30070B718 /* Storyboards */,
 				1F56737D1E6FA2BF0070B718 /* AppDelegate.swift */,
-				1F56737F1E6FA2BF0070B718 /* ViewController.swift */,
-				1F5673811E6FA2BF0070B718 /* Main.storyboard */,
 				1F5673841E6FA2BF0070B718 /* Assets.xcassets */,
 				1F5673861E6FA2BF0070B718 /* LaunchScreen.storyboard */,
 				1F5673891E6FA2BF0070B718 /* Info.plist */,
 			);
 			path = StackedMenu;
+			sourceTree = "<group>";
+		};
+		1F56738F1E6FA7C30070B718 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1F5673811E6FA2BF0070B718 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		1F5673901E6FA7CB0070B718 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1F56737F1E6FA2BF0070B718 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		1F5673911E6FA7D20070B718 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1F5673921E6FA7D80070B718 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +332,7 @@
 				1F56738E1E6FA2BF0070B718 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
