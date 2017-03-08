@@ -25,19 +25,27 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanfranworkspace" translatesAutoresizingMaskIntoConstraints="NO" id="EeR-Sy-ZPU">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="445"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modernized Workspace" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFg-I2-tC7">
+                                <rect key="frame" x="16" y="28" width="345.5" height="40"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="33"/>
+                                <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="YFg-I2-tC7" secondAttribute="leading" id="Brh-ub-jnk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="EeR-Sy-ZPU" secondAttribute="trailing" constant="-16" id="Cpo-0W-RDS"/>
                             <constraint firstItem="EeR-Sy-ZPU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="KWd-zt-9mD"/>
                             <constraint firstItem="EeR-Sy-ZPU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="bSC-vE-YDx"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EeR-Sy-ZPU" secondAttribute="bottom" constant="222" id="cMB-Vp-u6o"/>
+                            <constraint firstItem="YFg-I2-tC7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="gIW-MU-XBY"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="102.99850074962519"/>
+            <point key="canvasLocation" x="140" y="23"/>
         </scene>
     </scenes>
     <resources>
