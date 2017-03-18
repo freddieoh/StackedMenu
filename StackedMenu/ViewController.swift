@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UICollisionBehaviorDelegate {
   
   let data = ["Modern Workspace", "West Coast Style Lifestyle", "Relaxed Environment"]
   
@@ -52,11 +52,16 @@ class ViewController: UIViewController {
     stackElementVC.didMove(toParentViewController: self)
     
     let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(ViewController.handlePan(gestureRecognizer:)))
-    view.addGestureRecognizer(panGestureRecognizer) 
+    view.addGestureRecognizer(panGestureRecognizer)
+    
+    let collision = UICollisionBehavior(items: [view])
+    collision.collisionDelegate = self
+    animator.addBehavior(collision)
     
     
-    return nil
+    return view
   }
+
 
 
   func handlePan(gestureRecognizer: UIPanGestureRecognizer) {
