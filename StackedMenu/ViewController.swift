@@ -58,6 +58,15 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
     collision.collisionDelegate = self
     animator.addBehavior(collision)
     
+   
+    // Lower boundary
+    let boundary = view.frame.origin.y + view.frame.size.height
+    let boundaryStart = CGPoint(x: 0, y: boundary)
+    let boundaryEnd = CGPoint(x: self.view.bounds.size.width, y: boundary)
+    collision.addBoundary(withIdentifier: 1 as NSCopying, from: boundaryStart, to: boundaryEnd)
+    
+    // Upper Boundary 
+    
     
     return view
   }
