@@ -47,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="140" y="23"/>
         </scene>
-        <!--View Controller-->
+        <!--Stack Element View Controller-->
         <scene sceneID="nDm-1D-c5T">
             <objects>
-                <viewController id="MZv-ZQ-IgI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StackElement" id="MZv-ZQ-IgI" customClass="StackElementViewController" customModule="StackedMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ii1-Tw-1eM"/>
                         <viewControllerLayoutGuide type="bottom" id="Dbw-ig-709"/>
@@ -83,6 +83,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="FL2-fS-8aE" secondAttribute="trailing" constant="4" id="yN9-D6-v3v"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="headerLabel" destination="R8A-0d-hD5" id="gPe-42-DzF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Wn-Nf-sdX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
