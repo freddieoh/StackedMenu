@@ -42,10 +42,25 @@ class ViewController: UIViewController {
       view.layer.shadowRadius = 3
       view.layer.shadowOpacity = 0.5
       
-  
+      
+      if let headerStr = data as? String {
+        stackElementVC.headerString = headerStr
+      }
     }
-
+    self.addChildViewController(stackElementVC)
+    self.view.addSubview(view)
+    stackElementVC.didMove(toParentViewController: self)
+    
+    let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(ViewController.handlePan(gestureRecognizer:)))
+    view.addGestureRecognizer(panGestureRecognizer) 
+    
+    
     return nil
+  }
+
+
+  func handlePan(gestureRecognizer: UIPanGestureRecognizer) {
+    
   }
   
   
