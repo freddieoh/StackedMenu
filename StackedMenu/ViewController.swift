@@ -28,9 +28,26 @@ class ViewController: UIViewController {
   }
   
   
-  func addViewController (atOffset offset: CGFloat, dataForVC: AnyObject?) -> UIView? {
+  func addViewController (atOffset offset: CGFloat, dataForVC data: AnyObject?) -> UIView? {
+    
+    let frameForView = self.view.bounds.offsetBy(dx: 0, dy: self.view.bounds.size.height - offset)
+    let sb = UIStoryboard(name: "Main", bundle: nil)
+    let stackElementVC = sb.instantiateViewController(withIdentifier: "StackElement") as! StackElementViewController
+    
+    if let view = stackElementVC.view {
+      view.frame = frameForView
+      view.layer.cornerRadius = 5
+      view.layer.shadowOffset = CGSize(width: 5, height: 5)
+      view.layer.shadowColor = UIColor.black.cgColor
+      view.layer.shadowRadius = 3
+      view.layer.shadowOpacity = 0.5
+      
+  
+    }
+
     return nil
   }
+  
   
   func addAnimator() {
     animator = UIDynamicAnimator(referenceView: self.view)
